@@ -44,6 +44,7 @@ function getRandomUser(users) {
 //Отрисовка блока победителя
 function renderWinner(winner){
 
+    dom.btn.style.display = 'none'
     dom.result.style.display = 'block'
     dom.winner.name.innerHTML = winner.name
     dom.winner.nickname.innerHTML = winner.nickname
@@ -52,12 +53,4 @@ function renderWinner(winner){
 function getFilteredUser(users, winner){
     const filterUsers = users.filter(user => user.id !== winner.id)
     return filterUsers
-}
-
-function renderAnimatedRandomUsers(filteredUsers){
-    //Интервал
-    setInterval(() => {
-        const randomUser = getFilteredUser(filteredUsers)
-        renderWinner(randomUser)
-    }, 1000)
 }
