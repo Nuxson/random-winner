@@ -1,0 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;800;900&display=swap');
+
+:root{
+    /*Цвета*/
+    --gradientBtn: linear-gradient(to right bottom, rgb(161, 206, 253), rgb(200, 255, 182));
+    --gradientGen: linear-gradient(to right bottom, rgb(91, 160, 255), rgb(253, 129, 255));
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #333;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.8);
+    
+
+}
+.generator{
+    width: 350px;
+    padding: 32px;
+    background-color: #fff;
+    border-radius: 16px;
+    text-align: center;
+    background: var(--gradientBtn);
+}
+.generator__title {
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+.generator__btn {
+    cursor: pointer;
+    font-weight: 600;
+    padding: 16px 32px;
+    background: var(--gradientGen);
+    color: #fff ;
+    font-size: 24px;
+    border-radius: 8px;
+    margin-top: 32px;
+}
+.generator__result {
+    margin-top: 16px;
+    padding: 16px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    border:1px solid #555;
+    display: none;
+}
+.generator__resutl-title {
+    font-size: 32px;
+    color:#333;
+    font-weight: 600;
+}
+.generator__remained {
+    margin-bottom: 16px;
+    font-size: 18px;
+    
+}
+.generator__result-img {
+    font-size: 42px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.generator__winner {
+    font-size: 20px;
+} 
