@@ -1,8 +1,8 @@
 const users = [
     {
         id: 1,
-        name:'Вася',
-        nickname:'vasy',
+        name:'Света',
+        nickname:'Unknown Cloud',
     },
     {
         id: 2,
@@ -56,7 +56,7 @@ const users = [
     },
     {
         id: 12,
-        name:'Светлана',
-        nickname:'Unknown Cloud',
+        name:'Вася',
+        nickname:'Cloud',
     },
 ]
